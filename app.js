@@ -11,4 +11,14 @@ app.use('/api/auth', AuthController);
 
 app.use(express.static(path.join(__dirname,"client")));
 
+app.use(logger('dev'));
+
+db.Library.create({ name: "Campus Library" })
+.then(dbLibrary => {
+    console.log(dbLibrary);
+})
+.catch(({message}) => {
+    console.log(message);
+});
+
 module.exports = app;

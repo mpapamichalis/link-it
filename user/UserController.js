@@ -6,7 +6,7 @@ const path = require("path");
 
 router.use(bodyParser.urlencoded({ extended: true }));
 router.use(bodyParser.json());
-const User = require('./User');
+const User = require('../models/User');
 
 // CREATES A NEW USER
 router.post('/', function (req, res) {
