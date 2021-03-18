@@ -17,7 +17,7 @@ function CardSigup() {
               <input type="password" name="" placeholder="Password"></input>
               <div className="row2">
                 <input type="submit" name="" value="Signup" href="#"></input>
-                <a className="already text-muted" href="#">
+                <a className="already text-muted" href="/">
                   Already a user?
                 </a>
               </div>
