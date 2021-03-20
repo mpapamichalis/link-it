@@ -14,22 +14,21 @@ function CardLogin() {
 
   //Event handler for onClick 
 function handleSubmit(event){
+  
   event.preventDefault();
  
-console.log(formObject.email, formObject.password)
 logInUser(formObject.email, formObject.password)
 function logInUser(email, password){
-  console.log(email, password)
+
   if (formObject.email && formObject.password) {
     API.getUser({
       email: formObject.email,
       password: formObject.password
    
     })
-      .then(console.log("worked"))
+      .then()
       .catch(err => console.log(err));
   }
-
 }
 
 }

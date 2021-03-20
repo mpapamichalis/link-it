@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const AuthRoutes = require('./users');
 
-// Book routes
+// Authentication routes
 router.use("/auth", AuthRoutes);
 
 module.exports = router;
