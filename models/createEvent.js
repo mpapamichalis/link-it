@@ -4,7 +4,7 @@ var CreateSchema = new mongoose.Schema({
     title: String,
     where: String,
     total: Number,
-    description: String
+    description: String,
     
   });
   
