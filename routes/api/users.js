@@ -11,9 +11,9 @@ const Event = require("../../models/createEvent");
 // router.route("/login").post(userController.findOne)
 
 //routes to register the user to create a new account
-// router.route("/register").post(userController.create)
+router.route("/register").post(userController.create)
 
-// router.route("/createEvent").post(userController.create)
+router.route("/createEvent").post(userController.create)
 
 router.post('/register', function(req, res) {
     console.log(req.body)
