@@ -10,11 +10,6 @@ export default{
     //creates a new account for a user 
     createUser: function(userData){
         return axios.post("/api/auth/register", userData);
-    },
-
-    //create event post route
-    eventPost: function(userData){
-        return axios.post("/api/auth/createEvent", userData);
     }
 
 }

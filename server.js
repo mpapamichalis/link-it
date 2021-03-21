@@ -14,7 +14,6 @@ if (process.env.NODE_ENV === "production") {
 // Add routes, both API and view
 app.use(routes);
 
-
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI || "mongodb://ibarrasb:pWFl91jlXfpvo2pe@cluster0-shard-00-00.9yudd.mongodb.net:27017,cluster0-shard-00-01.9yudd.mongodb.net:27017,cluster0-shard-00-02.9yudd.mongodb.net:27017/upLinkDB?ssl=true&replicaSet=atlas-ma7mzu-shard-0&authSource=admin&retryWrites=true&w=majority");
 
