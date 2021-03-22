@@ -3,9 +3,11 @@ import CreateEvent from "./components/CreateEvent"
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import CardLogin from "./components/CardLogin";
 import CardSignup from "./components/CardSignup";
-import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Landing from "./pages/landing";
 
 function App() {
+
   return (
     <Router>
       <div>
@@ -19,9 +21,13 @@ function App() {
           <Route exact path="/event">
             <CreateEvent />
           </Route>
+          <Route exact path="/landing">
+            <Landing />
+          </Route>
         </Switch>
       </div>
     </Router>
+
   );
 }
 

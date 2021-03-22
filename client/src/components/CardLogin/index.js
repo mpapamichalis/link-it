@@ -57,7 +57,7 @@ function logInUser(email, password){
                 <a className="forgot text-muted"  href="../signup">
                   Create Account
                 </a>
-                <input type="submit" name="" value="Login" onClick={handleSubmit} href="#"></input>
+                <input type="submit" name="" value="Login" onClick={handleSubmit} href="/event"></input>
               </div>
             </form>
           </div>

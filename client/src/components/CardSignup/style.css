@@ -18,7 +18,7 @@
     padding: 10px 10px;
     width: 250px;
     outline: none;
-    color: white;
+    color: black;
     border-radius: 24px;
     transition: .25s;
 }
@@ -31,7 +31,7 @@
     padding: 10px 10px;
     width: 250px;
     outline: none;
-    color: white;
+    color: black;
     border-radius: 24px;
     transition: .25s;
 }
@@ -44,7 +44,7 @@
     padding: 10px 10px;
     width: 250px;
     outline: none;
-    color: white;
+    color:black;
     border-radius: 24px;
     transition: .25s;
 }
