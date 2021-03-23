@@ -12,7 +12,7 @@ function App() {
     <Router>
       <div>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/login">
             <CardLogin />
           </Route>
           <Route exact path="/signup">
@@ -21,7 +21,7 @@ function App() {
           <Route exact path="/event">
             <CreateEvent />
           </Route>
-          <Route exact path="/landing">
+          <Route exact path="/">
             <Landing />
           </Route>
         </Switch>
