@@ -28,7 +28,13 @@ function logInUser(username, email, password){
       password: formObject.password
    
     })
-      .then()
+      .then(function(res){
+        let uSer = JSON.stringify(res.data.auth);
+        console.log(uSer)
+        if (uSer === 'true'){
+          // window.location.replace('') 
+        }
+      })
       .catch(err => console.log(err));
   }
 }
