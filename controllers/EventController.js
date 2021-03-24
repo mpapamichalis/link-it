@@ -17,6 +17,17 @@ module.exports = {
           .then(event => res.json(event))
           .catch(err => res.status(422).json(err));
       },
+      findAll: function(req, res) {
+        Event.find(req.query)
+          .sort({ date: -1 })
+          .then(dbModel => res.json(dbModel))
+          .catch(err => res.status(422).json(err));
+      },
+      findById: function(req, res) {
+        Event.findById(req.params.id)
+          .then(dbModel => res.json(dbModel))
+          .catch(err => res.status(422).json(err));
+      },
 
 }
 

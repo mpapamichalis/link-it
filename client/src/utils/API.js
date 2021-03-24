@@ -14,5 +14,10 @@ export default{
 
     eventPost: function(userData){
         return axios.post("/api/event/createEvent", userData);
-    }
+    },
+
+    // Gets all posts
+    getPosts: function(userData) {
+    return axios.get("/api/event/createEvent", userData);
+    },
 }

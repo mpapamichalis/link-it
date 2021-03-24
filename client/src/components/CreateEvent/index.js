@@ -1,6 +1,7 @@
 import React,{useState} from "react";
 import API from "../../utils/API";
 import "./style.css";
+import axios from 'axios';
 
 function CreateEvent() {
     const [eventCreate, setEventCreate] = useState({})
