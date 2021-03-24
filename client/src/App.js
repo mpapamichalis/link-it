@@ -11,11 +11,12 @@ import 'semantic-ui-css/semantic.min.css'
 import { StoreProvider } from "./utils/GlobalState";
 
 function App() {
+
   return (
     <Router>
       <div>
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/login">
             <CardLogin />
           </Route>
           <Route exact path="/signup">
