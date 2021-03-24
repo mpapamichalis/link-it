@@ -32,7 +32,7 @@ function logInUser(username, email, password){
         let uSer = JSON.stringify(res.data.auth);
         console.log(uSer)
         if (uSer === 'true'){
-          // window.location.replace('') 
+          window.location.replace('../login') 
         }
       })
       .catch(err => console.log(err));

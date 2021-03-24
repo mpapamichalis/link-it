@@ -25,7 +25,7 @@ function App() {
           <Route exact path="/event">
             <CreateEvent />
           </Route>
-          <Route exact path="/landing">
+          <Route exact path="/">
             <Landing />
           </Route>
             <Route exact path="/eventList">

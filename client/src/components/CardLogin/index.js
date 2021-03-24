@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import "./style.css";
 import API from "../../utils/API";
 
+
 function CardLogin() {
+
   
   const [formObject, setFormObject] = useState({})
 
@@ -30,7 +32,7 @@ function logInUser(email, password){
         let uSer = JSON.stringify(res.data.auth);
         console.log(JSON.stringify(res))
         if (uSer === 'true'){
-          // window.location.replace('') 
+           window.location.replace('../eventlist') 
         }
         
 

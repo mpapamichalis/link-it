@@ -19,10 +19,7 @@
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
-<<<<<<< HEAD
-=======
     "boostrap": "^2.0.0",
->>>>>>> 004f7b07dba9354d826b2c5682ba6d16a00325bf
     "bootstrap": "^4.6.0",
     "concurrently": "^6.0.0",
     "express": "^4.16.2",
