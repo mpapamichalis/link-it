@@ -46,7 +46,7 @@ function logInUser(email, password){
     <div className="container">
       <div className="row">
         <div className="col-md-6">
-          <div className="card">
+          <div className="card" style = {{background: "black", width: 1000}}>
             <form className="box">
               <h1>Login</h1>
               <p className="text-muted"> Enter login and password</p>
