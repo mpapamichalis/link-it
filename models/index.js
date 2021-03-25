@@ -2,5 +2,6 @@
 
 module.exports = {
     createEvent: require("./createEvent"),
-    User: require("./User")
+    User: require("./User"),
+    Post: require("./post")
   };

@@ -20,6 +20,11 @@ export default{
         return axios.post("/api/event/createEvent", userData);
     },
 
+    getPost: function(id) {
+        return axios.get("/api/event/" + id);
+    
+    },
+
     // Gets all posts
     getPosts: function(userData) {
     return axios.get("/api/event/createEvent", userData);

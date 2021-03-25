@@ -6,4 +6,5 @@ const EventRoute = require('./createEvent')
 router.use("/auth", AuthRoutes);
 router.use("/event", EventRoute)
 
+
 module.exports = router;

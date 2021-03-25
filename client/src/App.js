@@ -5,6 +5,7 @@ import CardLogin from "./components/CardLogin";
 import CardSignup from "./components/CardSignup";
 import Landing from "./pages/landing";
 import EventList from "./pages/eventList";
+import EventTarget from "./pages/eventTarget";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'semantic-ui-css/semantic.min.css'
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
       <div>
+      <StoreProvider>
         <Switch>
           <Route exact path="/login">
             <CardLogin />
@@ -29,11 +31,12 @@ function App() {
             <Landing />
           </Route>
             <Route exact path="/eventList">
-             <StoreProvider>
              <EventList /> 
-            </StoreProvider>
+            </Route>
+            <Route component={EventTarget} exact path="/event/:id">
             </Route>
         </Switch>
+        </StoreProvider>
       </div>
     </Router >
   );
