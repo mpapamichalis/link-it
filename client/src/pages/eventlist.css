@@ -1,0 +1,19 @@
+.userPost{
+    margin-bottom: 5px;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.postInfo{
+    display: block;
+}
+
+.postTitle{
+    font-size: x-large;
+}
+
+.event-btn{
+    color: red;
+}

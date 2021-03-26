@@ -38,7 +38,7 @@ function App() {
         </Switch>
         </StoreProvider>
       </div>
-    </Router >
+    </Router>
   );
 }
 

@@ -44,7 +44,7 @@ const EventTarget = props => {
         </Row>
         <Row>
           <Col size="md-2">
-            <Link to="/">← Back to Posts</Link>
+            <Link to="/eventlist">← Back to Posts</Link>
           </Col>
         </Row>
       </Container>

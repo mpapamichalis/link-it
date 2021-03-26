@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { ListItem, List } from "../components/List";
+import './eventlist.css'
 //import DeleteBtn from "../DeleteBtn";
+import Navbar from "../components/NavLoggedIn";
 import { Link } from "react-router-dom";
 import { useStoreContext } from "../utils/GlobalState";
 import { REMOVE_POST, UPDATE_POSTS, LOADING } from "../utils/actions";
@@ -38,20 +40,32 @@ function EventList() {
 
   return (
     <div>
-      <h1>All Events</h1>
-      <h3 className="mb-5 mt-5">Click on an event to view</h3>
+      
+      <Navbar/>
+      
+
       {state.posts.length ? (
         <List>
+        
           {state.posts.map(post => (
+           
+            <div className='userPost'>
             <ListItem key={post._id}>
               <Link to={"/event/" + post._id}>
-                <strong>
-                  {post.title} {post.where} {post.total} {post.description}
-                </strong>
+              <div className='postInfo'>
+                <div className='postTitle'>
+                  {post.title}  
+                </div>
+                <div>
+                Location: {post.where} 
+                </div>
+               </div> 
               </Link>
               
             </ListItem>
+            </div>
           ))}
+          
         </List>
       ) : (
         <h3>You haven't added any events yet!</h3>
