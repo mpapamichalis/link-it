@@ -1,8 +1,8 @@
 import React from "react";
-import CreateEvent from "./components/CreateEvent"
+import CreatePage from "./pages/create";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import CardLogin from "./components/CardLogin";
-import CardSignup from "./components/CardSignup";
+import LoginPage from "./pages/login";
+import SignUpPage from "./pages/signup";
 import Landing from "./pages/landing";
 import EventList from "./pages/eventList";
 import EventTarget from "./pages/eventTarget";
@@ -19,13 +19,13 @@ function App() {
       <StoreProvider>
         <Switch>
           <Route exact path="/login">
-            <CardLogin />
+            <LoginPage />
           </Route>
           <Route exact path="/signup">
-            <CardSignup />
+            <SignUpPage />
           </Route>
           <Route exact path="/event">
-            <CreateEvent />
+            <CreatePage />
           </Route>
           <Route exact path="/">
             <Landing />

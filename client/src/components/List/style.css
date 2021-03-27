@@ -1,0 +1,13 @@
+#list{
+    border:0px;
+    background: none;
+    margin: 20px;
+    text-align: center;
+    border: 2px solid rgb(179, 41, 179);
+    padding: 10px 10px;
+    width: 1000px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: .25s;
+}

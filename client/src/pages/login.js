@@ -4,17 +4,17 @@ import Navbar from "../components/Navbar";
 //import CreateEvent from "../components/CreateEvent";
 //import EventList from "../components/Pages/EventList";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LandingCard from '../components/LandingCard';
+import CardLogin from '../components/CardLogin';
 
-const Landing = () => {
+const LoginPage = () => {
   return (
     <div>
       <Navbar />
-      <LandingCard />
+      <CardLogin />
     </div>
 
   );
 
 };
 
-export default Landing;
+export default LoginPage;
