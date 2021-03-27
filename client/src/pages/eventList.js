@@ -40,15 +40,10 @@ function EventList() {
 
   return (
     <div>
-      
       <Navbar/>
-      
-
       {state.posts.length ? (
         <List>
-        
-          {state.posts.map(post => (
-           
+          {state.posts.map(post => ( 
             <div className='userPost'>
             <ListItem key={post._id}>
               <Link to={"/event/" + post._id}>
@@ -61,11 +56,9 @@ function EventList() {
                 </div>
                </div> 
               </Link>
-              
             </ListItem>
             </div>
           ))}
-          
         </List>
       ) : (
         <h3>You haven't added any events yet!</h3>

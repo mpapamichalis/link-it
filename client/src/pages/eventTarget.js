@@ -5,6 +5,7 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../utils/API";
 import { useStoreContext } from "../utils/GlobalState";
 import { SET_CURRENT_POST } from "../utils/actions";
+import NavLogged from "../components/NavLoggedIn";
 //import { Card, Icon } from "semantic-ui-react";
 
 
@@ -23,14 +24,15 @@ const EventTarget = props => {
     <>{state.currentPost ? (
 
       <Container fluid>
+        <NavLogged />
         <Row>
-          <Col size="md-12">
-            <Jumbotron>
+          <div className="col-md-4 offset-md-4">
+          <Jumbotron>
               <h1>
                 {state.currentPost.title}
               </h1>
             </Jumbotron>
-          </Col>
+          </div>
         </Row>
         <Row>
           <Col size="md-10 md-offset-1">

@@ -1,20 +1,20 @@
 import React from "react";
 //import { Col, Row, Container } from "../components/Grid";
-import Navbar from "../components/Navbar";
+import NavLogged from "../components/NavLoggedIn";
 //import CreateEvent from "../components/CreateEvent";
 //import EventList from "../components/Pages/EventList";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LandingCard from '../components/LandingCard';
+import CreateEvent from '../components/CreateEvent';
 
-const Landing = () => {
+const CreatePage = () => {
   return (
     <div>
-      <Navbar />
-      <LandingCard />
+      <NavLogged />
+      <CreateEvent />
     </div>
 
   );
 
 };
 
-export default Landing;
+export default CreatePage;

@@ -3,6 +3,7 @@ import "./style.css";
 import API from "../../utils/API";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function CardSigup() {
 
   const [formObject, setFormObject] = useState({})
@@ -48,8 +49,8 @@ function logInUser(username, email, password){
         <div className="col-md-6">
           <div className="card" style = {{background: "black", width: 1000}} >
             <form className="box">
-              <h1>Signup</h1>
-              <p className="text-muted">Welcome!</p>
+              <h1>Sign Up</h1>
+              <p >Welcome!</p>
               <input 
               type="text" 
               name="username" 
@@ -67,7 +68,7 @@ function logInUser(username, email, password){
               placeholder="Password"/>
               <div className="row2">
                 <input type="submit" name="" value="Signup"  onClick={handleSubmit} href="#"></input>
-                <a className="already text-muted" href="/">
+                <a className="already text-muted" href="/login">
                   Already a user?
                 </a>
               </div>
