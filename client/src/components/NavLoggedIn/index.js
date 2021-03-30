@@ -12,8 +12,8 @@ function NavLogged() {
         <img src={Logo} alt="website logo" />
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link  id="nav-links" to="/event" className={window.location.pathname === "/event" ? "nav-link active" : "nav-link"} aria-current="page">Create</Link>
-            <Link id="nav-links" to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"} aria-current="page">Log Off</Link>
+            <Link  id="nav-links" to="/event" className={window.location.pathname === "/event" ? "nav-link active" : "nav-link"} aria-current="page"><i class="calendar plus outline icon"></i></Link>
+            <Link id="nav-links" to="/" className={window.location.pathname === "/" ? "nav-link active" : "nav-link"} aria-current="page"><i class="sign out icon"></i></Link>
 
             {/* <Link className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</Link> */}
           </div>

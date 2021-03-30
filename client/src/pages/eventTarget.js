@@ -31,22 +31,17 @@ const EventTarget = props => {
               <h1>
                 {state.currentPost.title}
               </h1>
+              <article>
+              <h5><p>{state.currentPost.where}</p></h5>
+              <h6>Number of People Needed:<p>{state.currentPost.total}</p></h6>
+              <h4><p>{state.currentPost.description}</p></h4>
+            </article>
             </Jumbotron>
           </div>
         </Row>
         <Row>
-          <Col size="md-10 md-offset-1">
-            <article>
-              <h1>Content:</h1>
-              <p>{state.currentPost.body}</p>
-            </article>
-          </Col>
-        
-        
-        </Row>
-        <Row>
           <Col size="md-2">
-            <Link to="/eventlist">← Back to Posts</Link>
+            <Link to="/eventlist">← Back to Events</Link>
           </Col>
         </Row>
       </Container>

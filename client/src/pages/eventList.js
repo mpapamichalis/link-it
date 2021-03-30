@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { ListItem, List } from "../components/List";
 import './eventlist.css'
-//import DeleteBtn from "../DeleteBtn";
+import DeleteBtn from "../components/DeleteBtn";
 import Navbar from "../components/NavLoggedIn";
 import { Link } from "react-router-dom";
 import { useStoreContext } from "../utils/GlobalState";
 import { REMOVE_POST, UPDATE_POSTS, LOADING } from "../utils/actions";
 import API from "../utils/API";
+
 
 function EventList() {
   const [state, dispatch] = useStoreContext();
@@ -40,7 +41,7 @@ function EventList() {
 
   return (
     <div>
-      <Navbar/>
+      <Navbar/> 
       {state.posts.length ? (
         <List>
           {state.posts.map(post => ( 
@@ -49,12 +50,13 @@ function EventList() {
               <Link to={"/event/" + post._id}>
               <div className='postInfo'>
                 <div className='postTitle'>
-                  {post.title}  
+                  <h3>{post.title}</h3> 
                 </div>
                 <div>
-                Location: {post.where} 
+                Location: {post.where}
                 </div>
                </div> 
+               <DeleteBtn onClick={() => removePost(post._id)} />
               </Link>
             </ListItem>
             </div>
@@ -68,3 +70,4 @@ function EventList() {
 }
 
 export default EventList;
+
