@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
@@ -30,6 +31,7 @@
     "nodemon": "^2.0.7",
     "path": "^0.12.7",
     "react-bootstrap": "^1.5.2",
+    "react-fontawesome": "^1.7.1",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.0.3"
   }

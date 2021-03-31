@@ -7,7 +7,7 @@ import "./style.css";
 function DeleteBtn(props) {
   return (
     <span onClick={props.onClick} className="delete-btn"  role="button"  tabIndex="0">
-    Delete Event 
+    X 
     </span>
     
   );
