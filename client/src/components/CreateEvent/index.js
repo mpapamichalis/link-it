@@ -1,6 +1,9 @@
 import React,{useState} from "react";
 import API from "../../utils/API";
 
+
+//import DeleteBtn from "../components/DeleteBtn";
+
 import "./style.css";
 
 
@@ -14,9 +17,9 @@ function CreateEvent() {
 
   function handleSubmit(event){
     event.preventDefault();
-   
-  // console.log(eventCreate.where, eventCreate.total, eventCreate.description)
-
+    
+  
+  
   createE(eventCreate.title, eventCreate.where, eventCreate.total, eventCreate.description)
 
   function createE(title, where, total, description){
@@ -31,7 +34,7 @@ function CreateEvent() {
       })
         .then(function(){
           console.log("worked")
-        window.location.replace('../eventlist') 
+      
         }
         )
         .catch(err => console.log(err));
@@ -55,7 +58,7 @@ function CreateEvent() {
               <input type="amount" name="total" placeholder="Amount of People" onChange={handleInputChange}></input>
               <input type="description" name="description" placeholder="Description" onChange={handleInputChange}></input>
               <div className="row2">
-                <input type="submit" name="create" value="Create" onClick={handleSubmit} href="/eventlist"></input>
+                <input type="submit" name="create" value="Create" onClick={handleSubmit} to="/eventlist"></input>
               </div>
             </form>
           </div>

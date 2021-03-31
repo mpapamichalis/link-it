@@ -37,9 +37,12 @@ render(){
             <SignUpPage />
           </Route>
             {!this.state.isAuth && <Redirect to="/login"/>}
-          <Route exact path="/event">
-            <CreatePage />
-          </Route>
+          
+        
+            <Route component={CreatePage} exact path="/event">
+            </Route>
+            
+   
             <Route exact path="/eventList">
              <EventList /> 
             </Route>
