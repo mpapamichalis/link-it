@@ -16,7 +16,7 @@ function LandingCard() {
             <div className="row">
                 <div className="col-md-6">
                     <div className="card" style={{ background: "black", width: 1000 }} >
-                        <form className="box">
+                        <form className="landing">
                             <img src={Logo} alt="website logo" />
                             <p>People are relocating to new cities for jobs more than ever. Link Up is an application that makes it easier for transplants to make new connections and good memories.</p>
                             <Buttons />

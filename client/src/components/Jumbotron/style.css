@@ -1,7 +1,8 @@
-.jumbotron{
-    background-color: #191919;;
-    color: white;
-    margin: 10%;
-    padding: 12%;
-    
+.jumbotron {
+  background-color: #191919;
+  color: white;
+  margin: 10%;
+  padding: 12%;
+  width: 100%;
+
 }

@@ -19,7 +19,7 @@ const EventTarget = props => {
   }, []);
 
   const title = {
-    fontSize: "50px",
+    fontSize: "30px",
     fontFamily: "Nunito Sans, sans-serif",
     marginTop: "-40px"
   }
