@@ -3,7 +3,7 @@ import React from "react";
 import Navbar from "../components/Navbar";
 //import CreateEvent from "../components/CreateEvent";
 //import EventList from "../components/Pages/EventList";
-import 'bootstrap/dist/css/bootstrap.min.css';
+//mport 'bootstrap/dist/css/bootstrap.min.css';
 import CardLogin from '../components/CardLogin';
 
 const LoginPage = () => {
