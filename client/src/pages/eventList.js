@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 import { ListItem, List } from "../components/List";
-import './eventlist.css'
+//import './eventlist.css'
 import DeleteBtn from "../components/DeleteBtn";
 import Navbar from "../components/NavLoggedIn";
 import { Link } from "react-router-dom";
 import { useStoreContext } from "../utils/GlobalState";
 import { REMOVE_POST, UPDATE_POSTS, LOADING } from "../utils/actions";
 import API from "../utils/API";
-
+import {Grid} from "semantic-ui-react";
 
 function EventList() {
   const [state, dispatch] = useStoreContext();
@@ -44,9 +44,11 @@ function EventList() {
       <Navbar/> 
       {state.posts.length ? (
         <List>
+        <Grid stackable columns={3}>
           {state.posts.map(post => ( 
-            <div className='userPost'>
             <ListItem key={post._id}>
+            <div className='userPost'>
+
               <Link to={"/event/" + post._id}>
               <div className='postInfo'>
                 <div className='postTitle'>
@@ -56,13 +58,16 @@ function EventList() {
                 Location: {post.where}
                 </div>
                </div> 
+               </Link>
                <DeleteBtn onClick={() => removePost(post._id)} />
-              </Link>
+               </div>
             </ListItem>
-            </div>
           ))}
+          </Grid>
         </List>
+        
       ) : (
+        
         <h3>You haven't added any events yet!</h3>
       )}
     </div>

@@ -29,4 +29,8 @@ export default{
     getPosts: function(userData) {
     return axios.get("/api/event/createEvent", userData);
     },
+
+    deletePost: function(id){
+        return axios.delete("/api/event/" + id);
+    }
 }

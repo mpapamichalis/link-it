@@ -12,5 +12,6 @@ router
 router
   .route("/:id")
   .get(eventController.findById)
+  .delete(eventController.deleteId)
 
 module.exports = router;

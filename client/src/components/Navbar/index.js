@@ -8,11 +8,13 @@ function Navbar() {
 
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
-        <img src={Logo} alt="website logo" />
+        <img src={Logo} alt="website logo" /> 
+
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav">
-            <Link to="/login" id="nav-links" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"} aria-current="page"><i class="sign in icon"></i></Link>
-            <Link to="/signup" id="nav-links" className={window.location.pathname === "/signup" ? "nav-link active" : "nav-link"}><i class="user plus icon"></i></Link>
+            <Link to="/login" id="nav-links" className={window.location.pathname === "/login" ? "nav-link active" : "nav-link"} aria-current="page">Sign in <i class="sign in icon"></i></Link>
+            <Link to="/signup" id="nav-links" className={window.location.pathname === "/signup" ? "nav-link active" : "nav-link"}>Sign up <i class="user plus icon"></i></Link>
+
             {/* <Link className="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</Link> */}
           </div>
         </div>
