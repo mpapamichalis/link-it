@@ -7,6 +7,8 @@ import { useStoreContext } from "../utils/GlobalState";
 import { SET_CURRENT_POST } from "../utils/actions";
 import NavLogged from "../components/NavLoggedIn";
 //import { Card, Icon } from "semantic-ui-react";
+//import DeleteBtn from "../components/DeleteBtn";
+
 
 
 const EventTarget = props => {
@@ -63,6 +65,17 @@ const EventTarget = props => {
     
   }
 
+  // const removePost = id => {
+  //   API.deletePost(id)
+  //     .then(() => {
+  //       dispatch({
+  //         type: REMOVE_POST,
+  //         _id: id
+  //       });
+  //     })
+  //     .catch(err => console.log(err));
+  // };
+
 
 
   return (
@@ -86,7 +99,9 @@ const EventTarget = props => {
         </Row>
         <Row>
           <Col size="md-12">
-            <Link style={button} to="/eventlist">← Back to Posts</Link>
+            <Link style={button} to="/eventlist">← Back to Events</Link>
+            {/* <DeleteBtn onClick={() => removePost(post._id)} /> */}
+
           </Col>
         </Row>
       </Container>

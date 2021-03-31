@@ -6,11 +6,12 @@ import Navbar from "../components/Navbar";
 //mport 'bootstrap/dist/css/bootstrap.min.css';
 import CardLogin from '../components/CardLogin';
 
-const LoginPage = () => {
+
+const LoginPage = (props) => {
   return (
     <div>
       <Navbar />
-      <CardLogin />
+      <CardLogin {...props} authenticate = {props.authenticate}  />
     </div>
 
   );
