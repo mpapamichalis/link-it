@@ -47,7 +47,7 @@ function CreateEvent() {
             <form className="box">
               <h1>Create Your Event</h1>
               <p className="text-muted"></p>
-              <input type="text" name="title" placeholder="Title/Activity" onChange={handleInputChange}></input>
+              <input type="text" name="title" placeholder="Title/Activity" style={{color: "white"}}  onChange={handleInputChange}></input>
               <input type="location" name="where" placeholder="City, State" onChange={handleInputChange}></input>
               <input type="amount" name="total" placeholder="Amount of People" onChange={handleInputChange}></input>
               <input type="description" name="description" placeholder="Description" onChange={handleInputChange}></input>

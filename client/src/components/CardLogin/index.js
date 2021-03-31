@@ -55,13 +55,13 @@ function logInUser(email, password){
               name="email" 
               onChange={handleInputChange}
                placeholder="Email"
-               />
+              style={{color: "white"}} />
 
               <input 
                 type="password" 
                 name="password" 
                 onChange={handleInputChange}
-                placeholder="Password"
+                style={{color: "white"}}  placeholder="Password"
                 />
               <div className="row2">
                 <a className="forgot text-muted"  href="../signup">

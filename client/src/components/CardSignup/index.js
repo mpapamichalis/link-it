@@ -52,17 +52,20 @@ function logInUser(username, email, password){
               <p className="text-muted">Welcome!</p>
               <input 
               type="text" 
-              name="username" 
+              name="username"
+              style={{color: "white"}}
               onChange={handleInputChange}
               placeholder="Username"/>
               <input 
               type="email" 
-              name="email" 
+              name="email"
+              style={{color: "white"}}
               onChange={handleInputChange}
               placeholder="Email"/>
               <input 
               type="password" 
               name="password" 
+              style={{color: "white"}}
               onChange={handleInputChange}
               placeholder="Password"/>
               <div className="row2">
