@@ -3,7 +3,7 @@ import "./style.css";
 import API from "../../utils/API";
 
 
-function CardLogin() {
+function CardLogin(props) {
 
   
   const [formObject, setFormObject] = useState({})
@@ -32,7 +32,8 @@ function logInUser(email, password){
         let uSer = JSON.stringify(res.data.auth);
         console.log(JSON.stringify(res))
         if (uSer === 'true'){
-           window.location.replace('../eventlist') 
+          props.authenticate();
+          props.history.push("/eventList")
         }
         
 

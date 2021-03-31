@@ -1,44 +1,44 @@
 import React from "react";
-import CreateEvent from "./components/CreateEvent"
-import { BrowserRouter as Router, Redirect, Route, Switch } from "react-router-dom";
-import CardLogin from "./components/CardLogin";
-import CardSignup from "./components/CardSignup";
+import{createBrowserHistory} from "history";
+import CreatePage from "./pages/create";
+import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import LoginPage from "./pages/login";
+import SignUpPage from "./pages/signup";
 import Landing from "./pages/landing";
 import EventList from "./pages/eventList";
 import EventTarget from "./pages/eventTarget";
 import "./App.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'semantic-ui-css/semantic.min.css'
+import 'semantic-ui-css/semantic.min.css';
 import { StoreProvider } from "./utils/GlobalState";
 import { Component } from "react";
-
+const history = createBrowserHistory();
 
 export default class App extends Component {
   state = {
     isAuth: false
-  };
 
+  };
+authenticate = ()=> {this.setState({isAuth: true})}
 render(){
 
 
 
   return (
-    <Router>
+    <Router history = {history}>
       <div>
       <StoreProvider>
         <Switch>
           <Route exact path="/">
             <Landing />
           </Route>
-          <Route exact path="/login">
-            <CardLogin />
-          </Route>
+          <Route path="/login" render={props => <LoginPage {...props} authenticate={this.authenticate}/> } />
           <Route exact path="/signup">
-            <CardSignup />
+            <SignUpPage />
           </Route>
             {!this.state.isAuth && <Redirect to="/login"/>}
           <Route exact path="/event">
-            <CreateEvent />
+            <CreatePage />
           </Route>
             <Route exact path="/eventList">
              <EventList /> 

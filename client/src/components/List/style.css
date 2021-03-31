@@ -1,0 +1,12 @@
+#list{
+    text-align: center;
+    border: 2px solid rgb(179, 41, 179);
+    outline: none;
+    background-color:black;
+    border-radius: 24px;
+    transition: .25s;
+}
+
+.ui.segment {
+    background-color: transparent !important;
+  }
