@@ -1,7 +1,8 @@
 import React,{useState} from "react";
 import API from "../../utils/API";
+
 import "./style.css";
-import axios from 'axios';
+
 
 function CreateEvent() {
     const [eventCreate, setEventCreate] = useState({})
@@ -14,11 +15,13 @@ function CreateEvent() {
   function handleSubmit(event){
     event.preventDefault();
    
-  console.log(eventCreate.where, eventCreate.total, eventCreate.description)
+  // console.log(eventCreate.where, eventCreate.total, eventCreate.description)
+
   createE(eventCreate.title, eventCreate.where, eventCreate.total, eventCreate.description)
+
   function createE(title, where, total, description){
     console.log(title, where, total, description)
-    if (eventCreate.where && eventCreate.total && eventCreate.description) {
+    if (eventCreate.title && eventCreate.where && eventCreate.total && eventCreate.description) {
       API.eventPost({
         title: eventCreate.title,
         where: eventCreate.where,
@@ -59,6 +62,7 @@ function CreateEvent() {
         </div>
       </div>
     </div>
+    
   );
 }
 
