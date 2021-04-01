@@ -14,6 +14,11 @@ Mongoose
 
 
 ## **Future Features:**
+* More individuality for each user
+* Interaction between users in the events (message boards, etc..)
+* Notifications
+* Integration of API for suggestions of popular places within each city
+
  
  
  
