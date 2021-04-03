@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./style.css";
 import API from "../../utils/API";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import swal from 'sweetalert';
 
 
 function CardSigup() {
@@ -19,8 +20,17 @@ function handleSubmit(event){
 
 event.preventDefault();
  
-logInUser(formObject.username,formObject.email, formObject.password)
+if(formObject.password.length >= 8){
+  
+  logInUser(formObject.username,formObject.email, formObject.password)
+} else{
+  swal('Password must be at least 8 Characters')
+}
+
+
 function logInUser(username, email, password){
+
+  
 
   if (formObject.username && formObject.email && formObject.password) {
     API.createUser({

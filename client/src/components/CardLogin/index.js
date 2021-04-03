@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import API from "../../utils/API";
+import swal from 'sweetalert';
 
 
 function CardLogin(props) {
@@ -34,11 +35,10 @@ function logInUser(email, password){
         if (uSer === 'true'){
           props.authenticate();
           props.history.push("/eventList")
-        }
-        
-
+        } 
       })
-      .catch(err => console.log(err));
+      .catch(err => swal("Email or password is incorrect")
+      );
   }
 }
 
