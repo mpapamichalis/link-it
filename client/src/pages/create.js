@@ -33,7 +33,7 @@ const CreatePage = () => {
     </div>
     
     <Col size="md-12">
-<Link style={button} to="/eventlist">← Back to Events</Link>
+<Link style={button} to="/eventList">← Back to Events</Link>
 </Col>
 
 </Container>
