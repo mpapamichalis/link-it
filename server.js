@@ -21,7 +21,7 @@ if (process.env.NODE_ENV === "production") {
 }
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://ibarrasb:pWFl91jlXfpvo2pe@cluster0-shard-00-00.9yudd.mongodb.net:27017,cluster0-shard-00-01.9yudd.mongodb.net:27017,cluster0-shard-00-02.9yudd.mongodb.net:27017/upLinkDB?ssl=true&replicaSet=atlas-ma7mzu-shard-0&authSource=admin&retryWrites=true&w=majority");
+mongoose.connect(process.env.MONGODB_URI || "mongodb://ibarrasb2:JK7ulXuskRZVr6Av@cluster0-shard-00-00.9yudd.mongodb.net:27017,cluster0-shard-00-01.9yudd.mongodb.net:27017,cluster0-shard-00-02.9yudd.mongodb.net:27017/upLinkDB?ssl=true&replicaSet=atlas-ma7mzu-shard-0&authSource=admin&retryWrites=true&w=majority");
 
 // Start the API server
 app.listen(PORT, function() {
