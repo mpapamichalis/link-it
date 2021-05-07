@@ -11,16 +11,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.swal-button{
-  background-color: #2ecc71;
-}
-.swal-button:hover{
-  background-color: gray;
-}
-.swal-button:active{
-  background-color: gray;
-}
-.swal-modal{
-  background-color: dimgray;
-}
