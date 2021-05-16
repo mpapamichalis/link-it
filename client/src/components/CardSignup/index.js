@@ -25,7 +25,7 @@ function logInUser(username, email, password){
   if (formObject.username && formObject.email && formObject.password) {
     API.createUser({
       username: formObject.username,
-      email: formObject.email,
+      email: formObject.email.toLowerCase(),
       password: formObject.password
    
     })
