@@ -40,3 +40,14 @@
   background: rgb(179, 41, 179);
   color: white;
 }
+
+/* Mobile responsive */
+@media screen and (max-width: 600px) {
+.landing{
+  max-width: 350px;
+  margin-top: unset!important;
+  margin-left: unset!important;
+  margin-right: unset!important;
+}
+
+}
